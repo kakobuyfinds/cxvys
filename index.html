@@ -1,0 +1,1186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="theme-color" content="#18283b">
+  <title>SuperBuy Spreadsheet Guide: Finds, Sizing &amp; QC | Field Notes</title>
+  <meta name="description" content="Explore a practical SuperBuy spreadsheet guide for shoes, clothing and accessories. Compare measurements, understand QC photos and build a useful buying shortlist.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="SuperBuy Spreadsheet Guide — A Better Shortlist">
+  <meta property="og:description" content="Start with a category. Compare the details. Read practical notes on sizing, materials, QC photos and parcel planning.">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="SuperBuy Spreadsheet Guide — A Better Shortlist">
+  <meta name="twitter:description" content="An independent guide to organizing fashion finds and checking the details before ordering.">
+
+  <link rel="preconnect" href="https://nikeclprod.vtexassets.com" crossorigin>
+
+  <!--
+    Filename: index.html
+    Language: en
+    Primary keyword: SuperBuy spreadsheet
+
+    Secondary keyword recommendations:
+    1. SuperBuy finds
+    2. SuperBuy clothing spreadsheet
+    3. SuperBuy shoes spreadsheet
+    4. SuperBuy QC guide
+
+    Related long-tail topic plan:
+    how to use a SuperBuy spreadsheet; SuperBuy spreadsheet for beginners;
+    how to organize SuperBuy finds; SuperBuy product comparison checklist;
+    SuperBuy shoes sizing guide; how to compare sneaker measurements;
+    SuperBuy clothing size chart; hoodie chest measurement guide;
+    T-shirt fabric weight comparison; jacket layering size guide;
+    pants waist and inseam measurements; matching set size checks;
+    jersey fit comparison guide; headwear circumference measurement;
+    accessory dimensions checklist; scarf material and care guide;
+    underwear sizing and return checks; how to read warehouse QC photos;
+    sneaker QC photo checklist; clothing stitching inspection guide;
+    seller photos versus warehouse photos; product variant verification;
+    how to check a product link; shopping shortlist for beginners;
+    parcel weight and dimensions guide; international order budget checklist;
+    how to compare material descriptions; fashion spreadsheet buying notes.
+
+    Research scope and limitation:
+    Google results could not be accessed directly. Ten related websites were
+    inspected through the available web search service. These are research
+    references, not a verified Google first-page ranking. Extracted themes
+    informed the original content below; unverified prices, product counts,
+    promotions, reviews and service claims were not adopted.
+
+    Website / observed search themes:
+    su-perbuy.com:
+      Category navigation, product discovery, organized links.
+    repsheet.net/spreadsheet/superbuy:
+      Finds, filters, QC photos, product variants.
+    taofind.com/spreadsheets:
+      Marketplace discovery, comparison, total-cost considerations.
+    superbuyspreadsheet.org:
+      Category browsing, shortlist building, QC and parcel preparation.
+    superbuy.cloud:
+      Clothing discovery, category grids, beginner questions.
+    superbuypromo.com:
+      Shoes, apparel, accessories, brand and category browsing.
+    superbuy-spreadsheet.org:
+      Buying guides, QC checklists, cost and shipping research.
+    superbuyship.com:
+      Beginner navigation, fashion categories, purchasing workflow.
+    superbuyfind.org/spreadsheet:
+      Structured product research, category pools, source verification.
+    sheetsuperbuy.com:
+      Product organization, category discovery, image-led browsing.
+
+    Deployment note:
+    Add a self-referencing canonical and absolute page identifiers only after
+    the final public URL is known. No deployment address is assumed here.
+  -->
+
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #f8f7f2;
+      --white: #fff;
+      --ink: #18283b;
+      --muted: #586474;
+      --line: #dcdedc;
+      --blue: #e7eef5;
+      --lavender: #e8e2f6;
+      --lime: #e0edb7;
+      --accent: #374d81;
+      --radius: 20px;
+      --max: 1200px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { -webkit-text-size-adjust: 100%; }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font: 16px/1.65 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    a { color: inherit; text-underline-offset: 4px; }
+
+    a:hover { text-decoration-thickness: 2px; }
+
+    a:focus-visible,
+    summary:focus-visible {
+      outline: 3px solid var(--accent);
+      outline-offset: 5px;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+
+    h1, h2, h3, p, figure { margin: 0; }
+
+    h1, h2, h3 {
+      line-height: 1.1;
+      letter-spacing: -.04em;
+      text-wrap: balance;
+    }
+
+    h1 { font-size: clamp(2.65rem, 6.2vw, 5.4rem); }
+    h2 { font-size: clamp(1.9rem, 3.6vw, 3rem); }
+    h3 { font-size: 1.35rem; }
+
+    p { text-wrap: pretty; }
+
+    .wrap {
+      width: min(var(--max), calc(100% - 48px));
+      margin-inline: auto;
+    }
+
+    .eyebrow {
+      font-size: .73rem;
+      font-weight: 750;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+    }
+
+    .muted { color: var(--muted); }
+
+    .masthead { border-bottom: 1px solid var(--line); }
+
+    .masthead-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      min-height: 86px;
+    }
+
+    .wordmark {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      font-size: 1.15rem;
+      font-weight: 850;
+      letter-spacing: -.04em;
+    }
+
+    .mark {
+      display: grid;
+      place-items: center;
+      width: 38px;
+      height: 38px;
+      background: var(--ink);
+      border-radius: 50%;
+      color: var(--lime);
+      font-size: .9rem;
+      letter-spacing: -.05em;
+    }
+
+    .header-note { font-size: .8rem; }
+
+    .header-link {
+      font-size: .85rem;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .category-section { padding-block: 25px 30px; }
+
+    .category-label {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 13px;
+    }
+
+    .category-label p:last-child { font-size: .8rem; }
+
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 8px;
+    }
+
+    .category-grid a {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      min-height: 57px;
+      padding: 12px 15px;
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      font-size: .84rem;
+      font-weight: 650;
+      line-height: 1.35;
+      text-decoration: none;
+    }
+
+    .category-grid a:hover {
+      background: var(--blue);
+      border-color: #b4c3d4;
+    }
+
+    .category-grid a span:last-child { flex-shrink: 0; }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1.08fr 1fr;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--blue);
+    }
+
+    .hero-copy {
+      padding: clamp(28px, 4vw, 56px);
+      align-self: center;
+    }
+
+    .hero h1 { margin-top: 23px; }
+
+    .hero h1 span {
+      display: block;
+      margin-top: 13px;
+      color: var(--accent);
+      font-size: .58em;
+      letter-spacing: -.045em;
+    }
+
+    .hero-description {
+      max-width: 48ch;
+      margin-top: 24px;
+      color: #37495c;
+      font-size: 1.04rem;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      min-height: 50px;
+      padding: 12px 20px;
+      border: 1px solid var(--ink);
+      border-radius: 8px;
+      background: var(--ink);
+      color: var(--white);
+      font-size: .9rem;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .button:hover { background: #2c4059; }
+
+    .hero .button { margin-top: 28px; }
+
+    .hero-note {
+      max-width: 48ch;
+      margin-top: 15px;
+      color: #48596d;
+      font-size: .76rem;
+    }
+
+    .hero-visual {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 25px;
+      background: #fff;
+    }
+
+    .hero-visual img {
+      width: 100%;
+      aspect-ratio: 1;
+      object-fit: contain;
+    }
+
+    .hero-visual figcaption {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 16px 5px 4px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: .74rem;
+    }
+
+    .answer-strip {
+      display: grid;
+      grid-template-columns: 170px 1fr;
+      gap: 28px;
+      padding: 30px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .answer-strip p { max-width: 90ch; }
+
+    .section { padding-block: 66px; }
+
+    .section-heading {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 30px;
+      margin-bottom: 28px;
+    }
+
+    .section-heading h2 { margin-top: 10px; }
+
+    .section-heading > p {
+      max-width: 38ch;
+      color: var(--muted);
+      font-size: .92rem;
+    }
+
+    .reference-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .reference-card {
+      overflow: hidden;
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+    }
+
+    .image-box {
+      display: grid;
+      place-items: center;
+      padding: 22px;
+      background: #fff;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .image-box img {
+      width: 100%;
+      aspect-ratio: 1;
+      object-fit: contain;
+    }
+
+    .card-copy { padding: 23px; }
+
+    .card-copy h3 { margin-block: 11px 13px; }
+
+    .card-copy p {
+      color: var(--muted);
+      font-size: .9rem;
+    }
+
+    .card-copy a {
+      display: inline-block;
+      margin-top: 19px;
+      font-size: .85rem;
+      font-weight: 750;
+    }
+
+    .image-note {
+      margin-top: 15px;
+      color: var(--muted);
+      font-size: .75rem;
+    }
+
+    .workbench {
+      padding: clamp(25px, 4vw, 48px);
+      background: var(--ink);
+      border-radius: var(--radius);
+      color: var(--white);
+    }
+
+    .workbench .eyebrow { color: var(--lime); }
+
+    .workbench h2 {
+      max-width: 21ch;
+      margin-top: 12px;
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 28px;
+      margin-top: 35px;
+    }
+
+    .step {
+      padding-top: 21px;
+      border-top: 1px solid #536072;
+    }
+
+    .step-number {
+      display: inline-block;
+      margin-bottom: 20px;
+      color: var(--lime);
+      font-size: .78rem;
+      font-weight: 750;
+    }
+
+    .step h3 { font-size: 1.25rem; }
+
+    .step p {
+      margin-top: 14px;
+      color: #d3dce6;
+      font-size: .91rem;
+    }
+
+    .journal {
+      display: grid;
+      grid-template-columns: 270px 1fr;
+      gap: 58px;
+    }
+
+    .journal-intro h2 { margin-top: 12px; }
+
+    .journal-intro > p:last-child {
+      margin-top: 20px;
+      color: var(--muted);
+      font-size: .92rem;
+    }
+
+    .article + .article {
+      margin-top: 35px;
+      padding-top: 35px;
+      border-top: 1px solid var(--line);
+    }
+
+    .article h3 {
+      margin-block: 12px 18px;
+      font-size: 1.65rem;
+    }
+
+    .article p + p { margin-top: 14px; }
+
+    .article p {
+      color: #465365;
+      font-size: .96rem;
+    }
+
+    .article strong { color: var(--ink); }
+
+    .table-shell {
+      overflow-x: auto;
+      margin-top: 24px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: var(--white);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: .85rem;
+      line-height: 1.5;
+    }
+
+    caption {
+      padding: 15px 17px;
+      text-align: left;
+      font-weight: 750;
+      background: var(--lavender);
+    }
+
+    th, td {
+      padding: 14px 17px;
+      text-align: left;
+      vertical-align: top;
+      border-bottom: 1px solid var(--line);
+    }
+
+    thead th { background: #f4f5f3; }
+    tbody th { width: 25%; }
+    tbody tr:last-child > * { border-bottom: 0; }
+
+    .note {
+      margin-top: 22px;
+      padding: 18px 20px;
+      border-left: 4px solid var(--accent);
+      border-radius: 0 10px 10px 0;
+      background: var(--blue);
+      color: #37495c;
+      font-size: .9rem;
+    }
+
+    .faq-band {
+      padding-block: 58px;
+      background: var(--lavender);
+      border-block: 1px solid #d8d1e6;
+    }
+
+    .faq-layout {
+      display: grid;
+      grid-template-columns: 1fr 1.6fr;
+      gap: 60px;
+    }
+
+    .faq-intro h2 { margin-top: 12px; }
+
+    .faq-intro p:last-child {
+      max-width: 31ch;
+      margin-top: 18px;
+      color: #505168;
+      font-size: .93rem;
+    }
+
+    details {
+      border-bottom: 1px solid #c9c3d6;
+      padding-block: 19px;
+    }
+
+    details:first-child { padding-top: 0; }
+
+    summary {
+      cursor: pointer;
+      padding-right: 10px;
+      font-size: 1rem;
+      font-weight: 700;
+      line-height: 1.5;
+    }
+
+    details p {
+      margin-top: 13px;
+      color: #494c60;
+      font-size: .92rem;
+    }
+
+    .closing {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+      padding: 38px 0;
+    }
+
+    .closing h2 { font-size: 1.75rem; }
+    .closing p { margin-top: 9px; color: var(--muted); }
+
+    footer {
+      padding: 25px 0 32px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: .76rem;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      gap: 35px;
+    }
+
+    footer p { max-width: 88ch; }
+    footer a { white-space: nowrap; font-weight: 700; }
+
+    @media (max-width: 960px) {
+      .header-note { display: none; }
+      .category-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      .hero { grid-template-columns: 1.1fr 1fr; }
+      .hero-copy { padding: 30px; }
+      .hero h1 { font-size: 3.1rem; }
+      .hero-visual { padding: 15px; }
+      .hero-visual figcaption { flex-direction: column; gap: 3px; }
+      .journal { grid-template-columns: 220px 1fr; gap: 30px; }
+      .faq-layout { gap: 30px; }
+      .card-copy { padding: 18px; }
+    }
+
+    @media (max-width: 700px) {
+      .wrap { width: calc(100% - 32px); }
+      .masthead-inner { min-height: 72px; }
+      .wordmark { font-size: 1rem; }
+      .header-link { font-size: .77rem; }
+      .category-section { padding-block: 20px; }
+      .category-label { align-items: flex-start; }
+      .category-label p:last-child { max-width: 15ch; text-align: right; }
+      .category-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .category-grid a { min-height: 51px; padding: 10px 12px; font-size: .79rem; }
+      .hero { grid-template-columns: 1fr; }
+      .hero-copy { padding: 30px 25px; }
+      .hero h1 { font-size: clamp(2.7rem, 11vw, 4rem); }
+      .hero-visual { padding: 18px; }
+      .hero-visual img { max-height: 350px; }
+      .hero-visual figcaption { flex-direction: row; }
+      .answer-strip { grid-template-columns: 1fr; gap: 11px; padding-block: 25px; }
+      .section { padding-block: 44px; }
+      .section-heading { display: block; }
+      .section-heading > p { margin-top: 15px; }
+      .reference-grid { grid-template-columns: 1fr; gap: 16px; }
+      .reference-card { display: grid; grid-template-columns: 37% 1fr; }
+      .image-box { padding: 12px; border-bottom: 0; border-right: 1px solid var(--line); }
+      .card-copy { padding: 20px 17px; }
+      .card-copy h3 { font-size: 1.2rem; }
+      .card-copy p { font-size: .84rem; }
+      .steps { grid-template-columns: 1fr; gap: 24px; }
+      .step-number { margin-bottom: 10px; }
+      .journal, .faq-layout { grid-template-columns: 1fr; gap: 28px; }
+      .journal-intro > p:last-child { max-width: 55ch; }
+      .article h3 { font-size: 1.45rem; }
+      th, td { padding: 12px; }
+      .closing, .footer-inner { align-items: flex-start; flex-direction: column; gap: 20px; }
+      .closing .button { width: 100%; }
+    }
+
+    @media (prefers-reduced-motion: no-preference) {
+      a { transition: background-color .15s ease, border-color .15s ease; }
+    }
+
+    @media print {
+      body { background: white; color: black; }
+      .hero, .workbench, .faq-band { background: white; color: black; }
+      .workbench p, .workbench .eyebrow, .step-number { color: black; }
+      .button, .header-link { display: none; }
+      .wrap { width: 100%; }
+      .section { padding-block: 25px; }
+      details p { display: block; }
+      article, figure { break-inside: avoid; }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "#webpage",
+        "name": "SuperBuy Spreadsheet Guide — A Better Shortlist",
+        "description": "An independent English-language guide to organizing fashion finds, comparing measurements and reviewing QC photos.",
+        "inLanguage": "en",
+        "about": {
+          "@type": "Thing",
+          "name": "SuperBuy spreadsheet",
+          "description": "A product-research list used to organize and compare shopping leads."
+        },
+        "hasPart": [
+          {"@id": "#sizing-article"},
+          {"@id": "#qc-article"},
+          {"@id": "#planning-article"},
+          {"@id": "#faq"}
+        ]
+      },
+      {
+        "@type": "Article",
+        "@id": "#sizing-article",
+        "headline": "Build a clothing shortlist around measurements",
+        "description": "Practical notes on comparing shoes, clothing, headwear and accessories using measurements and material descriptions.",
+        "inLanguage": "en",
+        "isPartOf": {"@id": "#webpage"},
+        "author": {"@type": "Organization", "name": "Field Notes Editorial"}
+      },
+      {
+        "@type": "Article",
+        "@id": "#qc-article",
+        "headline": "Read QC photos as evidence, not a promise",
+        "description": "A visual checklist for product variants, visible condition, stitching and the limits of warehouse photographs.",
+        "inLanguage": "en",
+        "isPartOf": {"@id": "#webpage"},
+        "author": {"@type": "Organization", "name": "Field Notes Editorial"}
+      },
+      {
+        "@type": "Article",
+        "@id": "#planning-article",
+        "headline": "Turn product leads into a realistic order plan",
+        "description": "How to record product details, compare costs and check parcel information before committing to an order.",
+        "inLanguage": "en",
+        "isPartOf": {"@id": "#webpage"},
+        "author": {"@type": "Organization", "name": "Field Notes Editorial"}
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "#faq",
+        "inLanguage": "en",
+        "isPartOf": {"@id": "#webpage"},
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is a SuperBuy spreadsheet?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A SuperBuy spreadsheet is a product-research list used to organize shopping leads, such as item names, source links, sizes and notes. A spreadsheet entry is a starting point for comparison, not proof of stock, authenticity or quality."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is this an official SuperBuy website or a live spreadsheet?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. This is an independent editorial guide, not an official SuperBuy service or a live inventory database. Category links open Cafans, and other browsing links lead to the Cafans homepage."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I choose the right clothing size?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Measure a similar garment that fits you, then compare the same measurement points with the specific listing. Check whether dimensions are flat garment measurements or body measurements, and confirm units before comparing."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can QC photos prove a branded item is authentic?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. QC photos can help reveal visible condition, labeling, color and some measurements. They do not establish authenticity, material composition, long-term durability or seller authorization."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does an item price include the full order cost?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Do not assume so. Check which charges apply, including domestic delivery, service charges, currency conversion, international shipping and destination import charges. Use current checkout information rather than an old spreadsheet figure."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are the reference images current Cafans listings?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. The Nike, Gucci and Dior images illustrate style and inspection topics. They do not confirm that the pictured products are listed, available or authenticated on Cafans."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+<link rel="canonical" href="https://kakobuyfinds.github.io/cxvys/">
+</head>
+
+<body>
+  <header class="masthead">
+    <div class="wrap masthead-inner">
+      <a class="wordmark" href="https://www.cafans.com" aria-label="Field Notes — visit Cafans">
+        <span class="mark" aria-hidden="true">fn.</span>
+        FIELD NOTES
+      </a>
+      <p class="header-note muted">An independent guide to a more considered shortlist.</p>
+      <a class="header-link" href="https://www.cafans.com">Explore Cafans <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+
+  <main>
+    <section class="category-section wrap" aria-label="Browse product categories">
+      <div class="category-label">
+        <p class="eyebrow">Start with a category</p>
+        <p class="muted">Browse categories on Cafans</p>
+      </div>
+
+      <nav class="category-grid" aria-label="Cafans categories">
+        <a href="https://cafans.com/category-911-Shoes.html"><span>Shoes</span><span aria-hidden="true">↗</span></a>
+        <a href="https://cafans.com/category-912-Hoodies%2FSweaters.html"><span>Hoodies/Sweaters</span><span aria-hidden="true">↗</span></a>
+        <a href="https://cafans.com/category-913-T-Shirts.html"><span>T-Shirts</span><span aria-hidden="true">↗</span></a>
+        <a href="https://cafans.com/category-914-Jackets.html"><span>Jackets</span><span aria-hidden="true">↗</span></a>
+        <a href="https://cafans.com/category-915-Pants%2FShorts.html"><span>Pants/Shorts</span><span aria-hidden="true">↗</span></a>
+        <a href="https://cafans.com/category-916-Headwear.html"><span>Headwear</span><span aria-hidden="true">↗</span></a>
+        <a href="https://cafans.com/category-917-Sets.html"><span>Sets</span><span aria-hidden="true">↗</span></a>
+        <a href="https://cafans.com/category-918-underwear%2Funderpants.html"><span>Underwear/underpants</span><span aria-hidden="true">↗</span></a>
+        <a href="https://cafans.com/category-919-Jersey.html"><span>Jersey</span><span aria-hidden="true">↗</span></a>
+        <a href="https://cafans.com/category-920-Accessories.html"><span>Accessories</span><span aria-hidden="true">↗</span></a>
+      </nav>
+    </section>
+
+    <div class="wrap">
+      <section class="hero" aria-labelledby="page-title">
+        <div class="hero-copy">
+          <p class="eyebrow">The considered wardrobe / Buying notes</p>
+          <h1 id="page-title">
+            SuperBuy<br>spreadsheet
+            <span>A better shortlist starts here.</span>
+          </h1>
+          <p class="hero-description">
+            Save the pieces that interest you. Compare fit, materials and visible details.
+            Use this guide to turn fashion finds into a small, useful list of questions before you order.
+          </p>
+          <a class="button" href="https://www.cafans.com">
+            Discover on Cafans <span aria-hidden="true">↗</span>
+          </a>
+          <p class="hero-note">
+            Independent editorial guide. Browsing links open Cafans; this page does not provide live stock or agent checkout.
+          </p>
+        </div>
+
+        <figure class="hero-visual">
+          <img
+            src="https://nikeclprod.vtexassets.com/arquivos/ids/160793/CW2288_111_A_PREM.jpg?v=637654399803530000"
+            alt="White Nike Air Force 1 low-top sneaker shown from the side."
+            width="640"
+            height="640"
+            loading="eager"
+            fetchpriority="high"
+            decoding="async">
+          <figcaption>
+            <span>01 / The everyday sneaker</span>
+            <span>Nike Air Force 1 · Style reference</span>
+          </figcaption>
+        </figure>
+      </section>
+
+      <aside class="answer-strip" aria-label="Quick definition">
+        <p class="eyebrow">The quick answer</p>
+        <p>
+          <strong>A SuperBuy spreadsheet is a way to organize product research.</strong>
+          Keep the item name, source, chosen variant, measurements and unanswered questions together.
+          Treat each entry as a lead to investigate, rather than a guarantee about the product.
+        </p>
+      </aside>
+
+      <section class="section" aria-labelledby="reference-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">A visual starting point</p>
+            <h2 id="reference-title">Look closer at the details.</h2>
+          </div>
+          <p>
+            Three style references, three different checks.
+            Use the images to decide what information you need from an actual listing.
+          </p>
+        </div>
+
+        <div class="reference-grid">
+          <article class="reference-card">
+            <div class="image-box">
+              <img
+                src="https://samtabak.com/cdn/shop/files/AURORA_BV2654-010_PHSFM001-2000.jpg?v=1740500771&amp;width=480"
+                alt="Model wearing a black Nike Club Fleece pullover hoodie and black shorts."
+                width="480"
+                height="480"
+                loading="lazy"
+                decoding="async">
+            </div>
+            <div class="card-copy">
+              <p class="eyebrow">Fit / Nike</p>
+              <h3>Start with the silhouette.</h3>
+              <p>
+                For a hoodie chest measurement guide, compare pit-to-pit width,
+                shoulder width and body length. A familiar size label alone will not describe the fit.
+              </p>
+              <a href="https://www.cafans.com">Explore clothing on Cafans <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="reference-card">
+            <div class="image-box">
+              <img
+                src="https://media.gucci.com/style/DarkGray_Center_0_0_490x490/1781886629/875733_3HBMD_9664_001_100_0000_Light-gg-cotton-canvas-baseball-hat.jpg"
+                alt="Beige and dark brown Gucci GG patterned baseball cap with a curved visor."
+                width="490"
+                height="490"
+                loading="lazy"
+                decoding="async">
+            </div>
+            <div class="card-copy">
+              <p class="eyebrow">Proportion / Gucci</p>
+              <h3>Small pieces still need sizing.</h3>
+              <p>
+                A headwear circumference measurement is more useful than “one size.”
+                Check the adjustment range, crown depth and fastening before comparing caps.
+              </p>
+              <a href="https://www.cafans.com">Explore accessories on Cafans <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="reference-card">
+            <div class="image-box">
+              <img
+                src="https://assets.christiandior.com/is/image/diorprod/42DOB070I600C540_E09?wid=480&amp;hei=480&amp;fit=constrain&amp;qlt=75"
+                alt="Navy blue Dior Oblique square scarf with contrasting patterned sections."
+                width="480"
+                height="480"
+                loading="lazy"
+                decoding="async">
+            </div>
+            <div class="card-copy">
+              <p class="eyebrow">Texture / Dior</p>
+              <h3>Read beyond the pattern.</h3>
+              <p>
+                A scarf material and care guide starts with the stated fiber composition,
+                dimensions and care label. A photograph cannot confirm how a fabric feels.
+              </p>
+              <a href="https://www.cafans.com">Find more style references <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+        </div>
+
+        <p class="image-note">
+          Images are illustrative brand references, not current Cafans product listings.
+          They do not establish availability, authenticity or a relationship with the brands shown.
+        </p>
+      </section>
+
+      <section class="workbench" aria-labelledby="workflow-title">
+        <p class="eyebrow">A simple research routine</p>
+        <h2 id="workflow-title">How to use a SuperBuy spreadsheet.</h2>
+
+        <div class="steps">
+          <article class="step">
+            <span class="step-number">01 / DISCOVER</span>
+            <h3>Choose one useful starting point.</h3>
+            <p>
+              A SuperBuy spreadsheet for beginners works best with a clear brief:
+              one category, an intended use and the fit you want. Start with everyday shoes,
+              a layer for cooler weather or one missing accessory.
+            </p>
+          </article>
+
+          <article class="step">
+            <span class="step-number">02 / COMPARE</span>
+            <h3>Give every lead the same fields.</h3>
+            <p>
+              Learning how to organize SuperBuy finds means recording comparable details.
+              Note the source, color, size, material description and measurement units.
+              Leave unknown information marked as unknown.
+            </p>
+          </article>
+
+          <article class="step">
+            <span class="step-number">03 / VERIFY</span>
+            <h3>Resolve the important gaps.</h3>
+            <p>
+              Use a SuperBuy product comparison checklist to identify what needs confirmation.
+              Reopen the current listing, check the selected variant and ask about missing
+              measurements before treating a saved entry as ready to order.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section journal" aria-labelledby="journal-title">
+        <div class="journal-intro">
+          <p class="eyebrow">The reading room</p>
+          <h2 id="journal-title">Good questions make better finds.</h2>
+          <p>
+            Practical fashion spreadsheet buying notes for fit, visual inspection
+            and a more complete order plan.
+          </p>
+        </div>
+
+        <div>
+          <article class="article" id="sizing-article" aria-labelledby="sizing-title">
+            <p class="eyebrow">Article 01 / Fit &amp; materials</p>
+            <h3 id="sizing-title">Build a clothing shortlist around measurements.</h3>
+            <p>
+              A useful <strong>SuperBuy clothing spreadsheet</strong> puts dimensions beside each saved item.
+              Begin with a garment you already wear comfortably. Measure it flat, using the same
+              points shown in the listing. A SuperBuy clothing size chart is only helpful when
+              you know whether it describes the body or the finished garment.
+            </p>
+            <p>
+              For T-shirt fabric weight comparison, separate any stated fabric weight from
+              the total item weight. Neither figure alone tells you whether a shirt will feel soft,
+              hold its shape or suit a warm climate. When learning how to compare material
+              descriptions, prioritize composition, construction and care information over
+              vague descriptions such as “premium.”
+            </p>
+            <p>
+              Use a jacket layering size guide based on what you plan to wear underneath.
+              Compare the chest, shoulders and sleeves with a jacket that already accommodates
+              those layers. For a SuperBuy shoes sizing guide, look for the specific model’s
+              size information and measurement method; numbers from another shoe may not transfer.
+            </p>
+
+            <div class="table-shell">
+              <table>
+                <caption>Category notes to keep beside your shortlist</caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Category</th>
+                    <th scope="col">Useful comparison</th>
+                    <th scope="col">Question to resolve</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Shoes</th>
+                    <td>Foot length, width guidance and model-specific sizing.</td>
+                    <td>When checking how to compare sneaker measurements, are both numbers taken the same way?</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Pants/Shorts</th>
+                    <td>Pants waist and inseam measurements, plus rise and thigh width.</td>
+                    <td>Is the waist measured relaxed, stretched or around the full circumference?</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Sets</th>
+                    <td>Separate matching set size checks for the top and bottom.</td>
+                    <td>Can each piece fit well if both must be ordered in one size?</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Jersey</th>
+                    <td>A jersey fit comparison guide based on chest width and length.</td>
+                    <td>Does the cut suit close-fitting wear or a relaxed layer?</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Accessories</th>
+                    <td>An accessory dimensions checklist covering length, width and closures.</td>
+                    <td>Are the dimensions for the item itself or its packaging?</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Underwear</th>
+                    <td>Underwear sizing and return checks before ordering.</td>
+                    <td>What do the listing’s hygiene and return conditions actually allow?</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+
+          <article class="article" id="qc-article" aria-labelledby="qc-title">
+            <p class="eyebrow">Article 02 / The SuperBuy QC guide</p>
+            <h3 id="qc-title">Read QC photos as evidence, not a promise.</h3>
+            <p>
+              Learning how to read warehouse QC photos starts with separating what is visible
+              from what is assumed. Compare the item’s overall shape, selected color, labels
+              and visible condition. Lighting, camera angle and image processing can change
+              how a color appears.
+            </p>
+            <p>
+              A sneaker QC photo checklist can cover the pair’s apparent symmetry, visible
+              sole edges, laces, size labels and surface marks. A clothing stitching inspection
+              guide should focus on accessible seams, hems, cuffs and fastenings. Ask for a closer
+              view when a detail matters but cannot be seen clearly.
+            </p>
+            <p>
+              When comparing seller photos versus warehouse photos, remember that the former
+              may illustrate a style while the latter may show a particular received item.
+              Complete product variant verification by matching the order’s color and size
+              with any visible labels. Neither type of image establishes authenticity.
+            </p>
+            <aside class="note">
+              <strong>Keep one “unconfirmed” field.</strong>
+              Photos cannot reliably prove fiber composition, internal construction,
+              comfort or long-term durability. Record those limits instead of filling gaps with guesses.
+            </aside>
+          </article>
+
+          <article class="article" id="planning-article" aria-labelledby="planning-title">
+            <p class="eyebrow">Article 03 / From shortlist to order</p>
+            <h3 id="planning-title">Turn product leads into a realistic order plan.</h3>
+            <p>
+              A <strong>SuperBuy shoes spreadsheet</strong> can help compare potential purchases,
+              but saved entries become less useful when their links or options change.
+              To understand how to check a product link, reopen it and confirm the item,
+              selected variant, available information and current seller details.
+              Record when you checked it.
+            </p>
+            <p>
+              Keep an international order budget checklist beside the product shortlist.
+              Separate the item amount from any applicable domestic delivery, service charges,
+              currency conversion, international freight and destination charges.
+              A product total and a delivered total answer different questions.
+            </p>
+            <p>
+              A parcel weight and dimensions guide should account for both the packed weight
+              and the package size. Ask which information an estimate uses and whether it can
+              change after packing. Compare current options for your destination instead of
+              assuming that another person’s parcel will cost the same.
+            </p>
+            <p>
+              The most useful shopping shortlist for beginners is short enough to review.
+              Keep the strongest candidates, write down unresolved questions and remove
+              entries that no longer fit your needs. Good <strong>SuperBuy finds</strong>
+              are easier to assess when each has a clear reason to be on the list.
+            </p>
+          </article>
+        </div>
+      </section>
+    </div>
+
+    <section class="faq-band" id="faq" aria-labelledby="faq-title">
+      <div class="wrap faq-layout">
+        <div class="faq-intro">
+          <p class="eyebrow">Straight answers</p>
+          <h2 id="faq-title">Before you save the next find.</h2>
+          <p>
+            A few clear answers about the guide, sizing, images and the limits of product research.
+          </p>
+        </div>
+
+        <div>
+          <details open>
+            <summary>What is a SuperBuy spreadsheet?</summary>
+            <p>
+              A SuperBuy spreadsheet is a product-research list used to organize shopping leads,
+              such as item names, source links, sizes and notes. A spreadsheet entry is a starting
+              point for comparison, not proof of stock, authenticity or quality.
+            </p>
+          </details>
+
+          <details>
+            <summary>Is this an official SuperBuy website or a live spreadsheet?</summary>
+            <p>
+              No. This is an independent editorial guide, not an official SuperBuy service or a live
+              inventory database. Category links open Cafans, and other browsing links lead to
+              the Cafans homepage.
+            </p>
+          </details>
+
+          <details>
+            <summary>How do I choose the right clothing size?</summary>
+            <p>
+              Measure a similar garment that fits you, then compare the same measurement points
+              with the specific listing. Check whether dimensions are flat garment measurements
+              or body measurements, and confirm units before comparing.
+            </p>
+          </details>
+
+          <details>
+            <summary>Can QC photos prove a branded item is authentic?</summary>
+            <p>
+              No. QC photos can help reveal visible condition, labeling, color and some measurements.
+              They do not establish authenticity, material composition, long-term durability
+              or seller authorization.
+            </p>
+          </details>
+
+          <details>
+            <summary>Does an item price include the full order cost?</summary>
+            <p>
+              Do not assume so. Check which charges apply, including domestic delivery, service
+              charges, currency conversion, international shipping and destination import charges.
+              Use current checkout information rather than an old spreadsheet figure.
+            </p>
+          </details>
+
+          <details>
+            <summary>Are the reference images current Cafans listings?</summary>
+            <p>
+              No. The Nike, Gucci and Dior images illustrate style and inspection topics.
+              They do not confirm that the pictured products are listed, available or
+              authenticated on Cafans.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap closing" aria-label="Continue browsing">
+      <div>
+        <h2>Find your next starting point.</h2>
+        <p>Open Cafans, choose a category and keep your comparison notes close.</p>
+      </div>
+      <a class="button" href="https://www.cafans.com">
+        Continue to Cafans <span aria-hidden="true">↗</span>
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <p>
+        <strong>FIELD NOTES</strong> · Independent fashion research.
+        SuperBuy and the pictured brand names identify the subjects discussed.
+        No official affiliation or endorsement is claimed. This page accepts no orders or payments.
+      </p>
+      <a href="https://www.cafans.com">Visit Cafans <span aria-hidden="true">↗</span></a>
+    </div>
+  </footer>
+</body>
+</html>
